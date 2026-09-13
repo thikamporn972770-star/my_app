@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Menu -->
+    <div id="menu-container"></div>
+
+    <div class="container">
+        <form id="form-login">
+            <div class="row">
+                <!-- เปลี่ยนจาก col-md-6 เป็น col-lg-4 col-md-5 col-sm-8 เพื่อให้กล่องเล็กลงและพอดีกับทุกหน้าจอ -->
+                <div class="col-lg-4 col-md-5 col-sm-8 mx-auto mt-5 p-4 bg-light rounded shadow-sm">
+                    <div class="h3 text-center text-primary mt-2">Login</div>
+                    
+                    <div class="mb-3 mt-4">
+                        <label class="form-label">Username</label>
+                        <input type="text" class="form-control" id="username" placeholder="กรอกชื่อผู้ใช้งาน" required>
+                    </div>
+                    
+                    <div class="mb-3 mt-3">
+                        <label class="form-label">Password</label>
+                        <input type="password" class="form-control" id="password" placeholder="กรอกรหัสผ่าน" required>
+                    </div>
+                    
+                    <div class="d-flex justify-content-center gap-3 mb-2 mt-4">
+                        <input type="submit" id="submit" class="btn btn-primary px-4" value="เข้าสู่ระบบ">
+                        <input type="reset" id="reset" class="btn btn-secondary px-4" value="ยกเลิก">
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/menu.js"></script>
+</body>
+</html>
